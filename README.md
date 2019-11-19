@@ -1,0 +1,2 @@
+# rugen-config
+Batch setup

@@ -1,7 +1,7 @@
 #!/bin/bash -e
 echo "Installing condor..."
 cd /etc/yum.repos.d
-wget wget https://research.cs.wisc.edu/htcondor/yum/RPM-GPG-KEY-HTCondor
+wget https://research.cs.wisc.edu/htcondor/yum/RPM-GPG-KEY-HTCondor
 rpm --import RPM-GPG-KEY-HTCondor
 wget https://research.cs.wisc.edu/htcondor/yum/repo.d/htcondor-stable-rhel7.repo
 yum install condor

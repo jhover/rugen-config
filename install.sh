@@ -8,6 +8,9 @@ wget https://research.cs.wisc.edu/htcondor/yum/repo.d/htcondor-stable-rhel7.repo
 sleep 5
 yum install condor
 sleep 5
+mkdir /home/condor
+mv /var/lib/condor/* /home/condor/
+chown -R condor:condor /home/condor
 cd /etc/condor/config.d
 mkdir unused
 mv * unused

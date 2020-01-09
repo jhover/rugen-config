@@ -1,5 +1,6 @@
 #!/bin/bash -e
 echo "Installing condor..."
+sleep 5
 cd /etc/yum.repos.d
 wget https://research.cs.wisc.edu/htcondor/yum/RPM-GPG-KEY-HTCondor
 rpm --import RPM-GPG-KEY-HTCondor
